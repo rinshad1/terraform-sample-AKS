@@ -33,7 +33,7 @@ steps:
 
 - task: TerraformCLI@0
   displayName: Terraform Destroy
-  condition: eq(variables['DestroyCluster'], 'true')
+  condition: eq(variables['DestroyCluster'], 'false')
   inputs:
     command: 'destroy'
     environmentServiceName: 'Free Trial (06a981a6-ce1c-421e-a6e8-431e5dcd12af)'
