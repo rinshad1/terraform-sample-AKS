@@ -13,7 +13,6 @@ steps:
   displayName: Terraform Init
   inputs:
     command: 'init'
-    backendType: 'gcs'
     allowTelemetryCollection: true
 
 - task: TerraformCLI@0
