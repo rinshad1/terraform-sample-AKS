@@ -22,12 +22,12 @@ steps:
     environmentServiceName: 'Free Trial (06a981a6-ce1c-421e-a6e8-431e5dcd12af)'
     allowTelemetryCollection: false
 
-- task: TerraformCLI@0
-  displayName: Terraform apply
-  inputs:
-    command: 'apply'
-    environmentServiceName: 'Free Trial (06a981a6-ce1c-421e-a6e8-431e5dcd12af)'
-    allowTelemetryCollection: true
+#- task: TerraformCLI@0
+#  displayName: Terraform apply
+#  inputs:
+#    command: 'apply'
+#    environmentServiceName: 'Free Trial (06a981a6-ce1c-421e-a6e8-431e5dcd12af)'
+#    allowTelemetryCollection: true
 
 - task: TerraformCLI@0
   displayName: Terraform Destroy
