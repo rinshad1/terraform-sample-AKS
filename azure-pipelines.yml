@@ -13,6 +13,8 @@ steps:
   displayName: Terraform Init
   inputs:
     command: 'init'
+    backendType: 'azurerm'
+    backendServiceArm: 'Free Trial (06a981a6-ce1c-421e-a6e8-431e5dcd12af)'
     allowTelemetryCollection: true
 
 - task: TerraformCLI@0
