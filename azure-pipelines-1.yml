@@ -17,7 +17,6 @@ steps:
       inlineScript: 'az login'
     displayName: 'Azure CLI Login'
 
-steps:
   - script: |
       terraform init
       terraform destroy -auto-approve
