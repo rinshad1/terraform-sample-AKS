@@ -9,15 +9,10 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-  - task: AzureCLI@2
-    inputs:
-      azureSubscription: 'Free Trial (06a981a6-ce1c-421e-a6e8-431e5dcd12af)'
-      scriptType: 'bash'
-      scriptLocation: 'inlineScript'
-      inlineScript: 'az login'
-    displayName: 'Azure CLI Login'
+ - task: AzureCLI@2
+   inputs:
+     azureSubscription: 'Free Trial (06a981a6-ce1c-421e-a6e8-431e5dcd12af)'
+     scriptType: 'ps'
+     scriptLocation: 'inlineScript'
+     inlineScript: 'az group delete --name k8s-resources --yes'
 
-  - script: |
-      terraform init
-      terraform destroy -auto-approve
-    displayName: 'Destroy Terraform Deployment'
