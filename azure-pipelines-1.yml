@@ -9,9 +9,16 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: TerraformCLI@0
-  displayName: Terraform Destroy
-  inputs:
-    command: 'destroy'
-    environmentServiceName: 'Free Trial (06a981a6-ce1c-421e-a6e8-431e5dcd12af)'
-    allowTelemetryCollection: true
+  - task: AzureCLI@2
+    inputs:
+      azureSubscription: 'Free Trial (06a981a6-ce1c-421e-a6e8-431e5dcd12af)'
+      scriptType: 'bash'
+      scriptLocation: 'inlineScript'
+      inlineScript: 'az login'
+    displayName: 'Azure CLI Login'
+
+steps:
+  - script: |
+      terraform init
+      terraform destroy -auto-approve
+    displayName: 'Destroy Terraform Deployment'
