@@ -9,10 +9,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
- - task: AzureCLI@2
+ - task: AzurePowerShell@5
    inputs:
      azureSubscription: 'Free Trial (06a981a6-ce1c-421e-a6e8-431e5dcd12af)'
-     scriptType: 'ps'
-     scriptLocation: 'inlineScript'
-     inlineScript: 'az group delete --name k8s-resources --yes'
-
+     ScriptType: 'InlineScript'
+     Inline: 'az group delete --name k8s-resources --yes'
+     azurePowerShellVersion: 'LatestVersion'
