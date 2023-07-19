@@ -1,9 +1,8 @@
 terraform {
   backend "azurerm" {
-    resource_group_name  = var.resourcename
+    resource_group_name  = "DefaultResourceGroup-EUS"
     storage_account_name = "tstateterraform01"
     container_name       = "tstate"
     key                  = "terraform.tfstate"
   }
 }
-#################
