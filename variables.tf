@@ -24,9 +24,9 @@ variable "client_id" {
   type        = string
 }
 variable "client_secret" {
-  #default = "xU-8Q~V8QEt5mBXAkSMpCDcbtArymTYCAHXeca03"
+  #default = $(client_secret)         #"xU-8Q~V8QEt5mBXAkSMpCDcbtArymTYCAHXeca03"
   type        = string
 }
 variable "tenant_id" {
-  default = "a6eec4e9-2344-4673-8365-0641c7db9a48"
+  default =  $(tenant_id)   #"a6eec4e9-2344-4673-8365-0641c7db9a48"
 }
