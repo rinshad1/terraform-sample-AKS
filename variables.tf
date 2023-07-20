@@ -20,7 +20,7 @@ variable "subscription_id" {
   default = "06a981a6-ce1c-421e-a6e8-431e5dcd12af"
 }
 variable "client_id" {
-  #default = "1f13ac3a-048c-40ae-a965-148669cdfef8"
+  default =  $(client_id)     #"1f13ac3a-048c-40ae-a965-148669cdfef8"
   type        = string
 }
 variable "client_secret" {
