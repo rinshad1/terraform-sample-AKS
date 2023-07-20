@@ -14,7 +14,7 @@ steps:
    inputs:
      azureSubscription: 'Free Trial (06a981a6-ce1c-421e-a6e8-431e5dcd12af)'
      ScriptType: 'InlineScript'
-     Inline: 'az login --service-principal --username  $username --password $password --tenant $tenant'
+     Inline: 'az login --service-principal --username  $(username) --password $(password) --tenant $(tenant) '
      azurePowerShellVersion: 'LatestVersion'
  - task: AzurePowerShell@5
    inputs:
