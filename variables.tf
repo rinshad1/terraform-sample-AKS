@@ -20,13 +20,13 @@ variable "subscription_id" {
   default = "06a981a6-ce1c-421e-a6e8-431e5dcd12af"
 }
 variable "client_id" {
-  default =  $(client_id)     #"1f13ac3a-048c-40ae-a965-148669cdfef8"
+  default =  "1f13ac3a-048c-40ae-a965-148669cdfef8"    #$(client_id)     #
   type        = string
 }
 variable "client_secret" {
-  #default = $(client_secret)         #"xU-8Q~V8QEt5mBXAkSMpCDcbtArymTYCAHXeca03"
+  #default = "xU-8Q~V8QEt5mBXAkSMpCDcbtArymTYCAHXeca03"    #$(client_secret)         #
   type        = string
 }
 variable "tenant_id" {
-  default =  $(tenant_id)   #"a6eec4e9-2344-4673-8365-0641c7db9a48"
+  default =  "a6eec4e9-2344-4673-8365-0641c7db9a48"    #$(tenant_id)   #
 }
