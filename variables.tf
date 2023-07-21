@@ -18,11 +18,11 @@ variable "agentnode" {
 }
 variable "subscription_id" {
   #default = "06a981a6-ce1c-421e-a6e8-431e5dcd12af"
-  description = "Azure Tenant ID"
+  description = "Azure Tenant ID   !!!"
 }
 variable "client_id" {
   #default =  "1f13ac3a-048c-40ae-a965-148669cdfef8"    #$(client_id)     #
-  #type        = string
+  type        = string
   description = "Azure Tenant ID"
 }
 variable "client_secret" {
