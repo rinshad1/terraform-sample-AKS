@@ -10,7 +10,7 @@ provider "azurerm" {
   subscription_id = "$(subscription_id)"
   client_id       = "$(client_id)"
   client_secret   = "$(client_secret)"
-  tenant_id       = "$(tenant_id)"
+  tenant_id       = var.tenant_id
   features {}
 }
 resource "azurerm_resource_group" "k8s" {
