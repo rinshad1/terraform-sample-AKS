@@ -21,12 +21,12 @@ variable "subscription_id" {
   description = "Azure Tenant ID   !!!"
 }
 variable "client_id" {
-  #default =  "1f13ac3a-048c-40ae-a965-148669cdfef8"    #$(client_id)     #
+  default =  "$(client_id)"            #"1f13ac3a-048c-40ae-a965-148669cdfef8" 
   type        = string
   description = "Azure Tenant ID   !@!!!"
 }
 variable "client_secret" {
- # default = "xU-8Q~V8QEt5mBXAkSMpCDcbtArymTYCAHXeca03"    #$(client_secret)         #
+ # default = "$(client_secret)"        #"xU-8Q~V8QEt5mBXAkSMpCDcbtArymTYCAHXeca03"
   #type        = string
   description = "Azure Tenant ID"
 }
