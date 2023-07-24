@@ -21,7 +21,7 @@ variable "subscription_id" {
   description = "Azure Subscription ID"
 }
 variable "client_id" {
-  default     =  "$(client)"            #"1f13ac3a-048c-40ae-a965-148669cdfef8" 
+  default     =  "$(client_id)"            #"1f13ac3a-048c-40ae-a965-148669cdfef8" 
   description = "Azure Client ID"
 }
 variable "client_secret" {
