@@ -27,8 +27,8 @@ default_node_pool {
     node_count = var.agentnode
     vm_size    = var.size
   }
-#service_principal {
+service_principal {
 #    client_id     = var.client_id
 #    client_secret = var.client_secret
-#  }
+  }
 }
