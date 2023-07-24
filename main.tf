@@ -28,7 +28,7 @@ default_node_pool {
     vm_size    = var.size
   }
 service_principal {
-    client_id     = $(client_id)
+    client_id     = "$(client_id)"
 #    client_secret = var.client_secret
   }
 }
