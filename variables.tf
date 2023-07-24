@@ -29,6 +29,6 @@ variable "client_secret" {
   description = "Azure Client Secret"
 }
 variable "tenant_id" {
-  default     =  "["$(tenant_id)"]"           #"a6eec4e9-2344-4673-8365-0641c7db9a48"    
+  default     =  "$(tenant_id)"           #"a6eec4e9-2344-4673-8365-0641c7db9a48"    
   description = "Azure Tenant ID"
 }
